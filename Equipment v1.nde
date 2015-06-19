@@ -1,0 +1,58 @@
+BORDER=RECTANGLE
+PAGE=21.59,27.94,PORTRAIT,HV
+DPI=300
+CARDSIZE=6,8
+
+LINK="1CVciMJoTFISqC4UUrwT2zkz5mfu09WK4UEdt-zAM8rQ"
+
+FONT=Arial, 12, T,#000000
+
+<artwork>=0, 1, 4, 5
+IMAGE=, [artwork], <artwork>, 0, P
+
+<name> = 0, 0, 6, 1
+RECTANGLE = , <name>, #0000FF, EMPTY, 0.05
+TEXT=," [Name]", <name>, LEFT, TOP
+
+<Subtype> = 0, .5, 6, 1
+'RECTANGLE = , <name>, #0000FF, EMPTY, 0.05
+FONT=Arial, 10, T,#000000
+TEXT=," [Subtype]", <Subtype>, LEFT, TOP
+'Reset Font
+FONT=Arial, 12, T,#000000
+
+
+<ShieldBonus> =4, 4, 2, 1
+IF=[ShieldBonus]>0
+IMAGE=,"images/shield_icon.jpg", <ShieldBonus, TL, 1, 1>, 0, P
+TEXT=,"+[ShieldBonus]", <ShieldBonus, TR, 1, 1>
+ENDIF
+RECTANGLE= , <ShieldBonus>, #FF0000, EMPTY, 0.05
+
+<MagicBonus> =4, 5, 2, 1
+IF=[MagicBonus]>0
+IMAGE=,"images/image01.png", <MagicBonus, TL, 1, 1>, 0, P
+TEXT=,"+[MagicBonus]", <MagicBonus, TR, 1, 1>
+ENDIF
+RECTANGLE= , <MagicBonus>, #FF0000, EMPTY, 0.05
+
+<MightBonus> =4, 6, 2, 1
+IF=[MightBonus]>0
+IMAGE=,"images/image02.png", <MightBonus, TL, 1, 1>, 0, P
+TEXT=,"+[MightBonus]", <MightBonus, TR, 1, 1>
+ENDIF
+RECTANGLE= , <MightBonus>, #FF0000, EMPTY, 0.05
+
+<Cost> =4, 7, 2, 1
+IMAGE=,"images/image04.png", <Cost, TL, 1, 1>, 0, P
+TEXT=,[Cost], <Cost, TR, 1, 1>
+RECTANGLE= , <Cost>, #00AAAA, EMPTY, 0.05
+
+<SpecialRules> =0, 7, 4, 1
+RECTANGLE= , <SpecialRules>, #33FF33, EMPTY, 0.05
+FONT = Courier, 8, , #000000, #CCCCCC
+TEXT=,[Rules1], <SpecialRules, TL, 4, .4>, LEFT, TOP
+TEXT=,[Rules2], <SpecialRules, CL, 4, .4>, LEFT, TOP
+TEXT=,[Rules3], <SpecialRules, BL, 4, .4>, LEFT, TOP
+'Reset Font
+FONT=Arial, 12, T,#000000

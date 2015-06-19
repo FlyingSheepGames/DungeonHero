@@ -1,0 +1,47 @@
+BORDER=RECTANGLE
+PAGE=21.59,27.94,LANDSCAPE,HV
+DPI=300
+CARDSIZE=8,6
+'CARDS=2
+'LINK="C:\Game Prototypes\Dungeon Hero\Dungeon.csv"
+link="1F5SlxpLMexUlOBRVnOZnbJ1qNuO1kM64pRc6rFxUhFM"
+
+FONT=Arial, 12, T,#000000
+
+<artwork>=0, 1, 6, 4
+IMAGE=, [artwork], <artwork>, 0, P
+
+<MightToDefeat> =6, 0, 2, 1
+IMAGE=,"images/image02.png", <MightToDefeat, TL, 1, 1>, 0, P
+RECTANGLE= , <MightToDefeat>, #FF0000, EMPTY, 0.05
+TEXT=,"[MightToDefeat]+", <MightToDefeat, TR, 1, 1>
+
+
+<name> = 0, 0, 6, 1
+RECTANGLE = , <name>, #0000FF, EMPTY, 0.05
+TEXT=," [Name]", <name>, LEFT, TOP
+
+<MagicToDefeat> =6, 1, 2, 1
+IMAGE=,"images/image01.png", <MagicToDefeat, TL, 1, 1>, 0, P
+RECTANGLE= , <MagicToDefeat>, #FF0000, EMPTY, 0.05
+TEXT=,"[MagicToDefeat]+", <MagicToDefeat, TR, 1, 1>
+
+<Damage> =6, 2, 2, 1
+IMAGE=,"images/image03.png", <Damage, TL, 1, 1>, 0, P
+RECTANGLE= , <Damage>, #333300, EMPTY, 0.05
+TEXT=,"[Damage] ", <Damage, TR, 1, 1>
+
+<SpecialRules> =0, 5, 6, 1
+RECTANGLE= , <SpecialRules>, #33FF33, EMPTY, 0.05
+FONT = Courier, 8, , #000000, #CCCCCC
+TEXT=,[Rules1], <SpecialRules, TL, 6, .4>, LEFT, TOP
+TEXT=,[Rules2], <SpecialRules, CL, 6, .4>, LEFT, TOP
+TEXT=,[Rules3], <SpecialRules, BL, 6, .4>, LEFT, TOP
+'Reset Font
+FONT=Arial, 12, T,#000000
+
+<Cost> =6, 5, 2, 1
+IMAGE=,"images/image04.png", <Cost, TL, 1, 1>, 0, P
+RECTANGLE= , <Cost>, #00AAAA, EMPTY, 0.05
+TEXT=,[Cost], <Cost, TR, 1, 1>
+
