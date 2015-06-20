@@ -2,8 +2,6 @@ BORDER=RECTANGLE
 PAGE=21.59,27.94,LANDSCAPE,HV
 DPI=300
 CARDSIZE=8,6
-'CARDS=2
-'LINK="C:\Game Prototypes\Dungeon Hero\Dungeon.csv"
 link="1F5SlxpLMexUlOBRVnOZnbJ1qNuO1kM64pRc6rFxUhFM"
 
 FONT=Arial, 12, T,#000000
@@ -44,4 +42,13 @@ FONT=Arial, 12, T,#000000
 IMAGE=,"images/image04.png", <Cost, TL, 1, 1>, 0, P
 RECTANGLE= , <Cost>, #00AAAA, EMPTY, 0.05
 TEXT=,[Cost], <Cost, TR, 1, 1>
+
+<DeckInitial>=6, 3, 2, 1
+IF=[Deck]="Necromancer"
+Text=,"N", <DeckInitial>
+ELSEIF=[Deck]="Druid"
+Text=,"D", <DeckInitial>
+ELSEIF=[Deck]="Any"
+Text=,"ND", <DeckInitial>
+ENDIF
 

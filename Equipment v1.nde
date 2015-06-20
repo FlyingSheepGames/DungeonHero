@@ -56,3 +56,12 @@ TEXT=,[Rules2], <SpecialRules, CL, 4, .4>, LEFT, TOP
 TEXT=,[Rules3], <SpecialRules, BL, 4, .4>, LEFT, TOP
 'Reset Font
 FONT=Arial, 12, T,#000000
+
+<DeckInitial>=4, 3, 2, 1
+IF=[Deck]="Necromancer"
+Text=,"N", <DeckInitial>
+ELSEIF=[Deck]="Druid"
+Text=,"D", <DeckInitial>
+ELSEIF=[Deck]="Any"
+Text=,"ND", <DeckInitial>
+ENDIF
